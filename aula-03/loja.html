@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Minha Loja</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Loja</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo à Minha Loja!</h2>
+            <p>Aqui você encontra os melhores produtos para o seu pet.</p>
+        </section>
+
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <ul>
+                <li>Rações</li>
+                <li>Brinquedos</li>
+                <li>Acessórios</li>
+            </ul>
+
+            <table border="1">
+                <thead>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Categoria</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ração 1kg</td>
+                        <td>R$ 18,90</td>
+                        <td>Rações</td>
+                    </tr>
+                    <tr>
+                        <td>Bolinha de Borracha</td>
+                        <td>R$ 9,90</td>
+                        <td>Brinquedos</td>
+                    </tr>
+                    <tr>
+                        <td>Coleira</td>
+                        <td>R$ 29,90</td>
+                        <td>Acessórios</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="cadastro">
+            <h2>Cadastro</h2>
+
+            <form>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="8">
+
+                <label for="categoria">Sua categoria favorita:</label>
+
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione uma categoria</option>
+                    <option value="racao">Rações</option>
+                    <option value="brinquedos">Brinquedos</option>
+                    <option value="acessorios">Acessórios</option>
+                </select>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <a href="https://www.petz.com.br/loja/petz-novo-hamburgo" target="_blank">Ver mais sobre a loja</a>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
