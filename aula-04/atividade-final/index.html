@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Mini Loja</title>
 </head>
 
@@ -14,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#video">Video</a></li>
+                <li><a href="#video">Vídeo</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#local">Onde Estamos</a></li>
             </ul>
@@ -27,32 +28,35 @@
 
             <article>
                 <h3>Scania 113</h3>
-                <img src="https://d36qmzp7jiean8.cloudfront.net/cliente_002499/veiculos/1233463_whatsapp%20image%202024-12-26%20at%2007.39.22_big.jpeg"
-                    alt="Scania 113 da cor branco" width="400" height="400" loading="lazy">
+                <a href="img/scania-113.jpeg"
+                    target="_blank">
+                    <img src="img/scania-113.jpeg"
+                        alt="Scania 113 da cor branco" width="400" height="400" loading="lazy">
+                </a>
+
                 <p>R$ 120.000,00</p>
             </article>
 
             <article>
                 <figure>
                     <h3>Scania R500</h3>
-                    <img src="https://cdn.awsli.com.br/2500x2500/2799/2799713/produto/354433279/scania-r-500-6x4-20-teto-alto-azul-qch-1-13m74z8x8t.jpg"
+                    <img src="img/scania-r500.webp"
                         alt="Scania R500 da cor azul" width="400" height="400" loading="lazy">
                     <figcaption>Scania R500 - R$ 500.000,00</figcaption>
                 </figure>
-
             </article>
 
 
             <article>
                 <h3>Volvo FH16</h3>
-                <img src="https://blogdocaminhoneiro.com/wp-content/uploads/2025/03/Evert-Jan-Luth-Volvo-FH16-Aero-1.jpg"
+                <img src="img/volvo-fh16.jpg"
                     alt="Volvo FH16 da cor laranja" width="400" height="300" loading="lazy">
                 <p>R$ 900.000,00</p>
             </article>
 
             <table border="1">
                 <caption>Lista de Produtos</caption>
-                <thead>
+                <thead> 
                     <tr>
                         <th>Produto</th>
                         <th>Preço</th>
@@ -80,18 +84,51 @@
         </section>
 
         <section id="video">
-            <h2>Video</h2>
+            <h2>Vídeo</h2>
             <video controls width="400" height="700" preload="metadata" title="Video de apresentação do produto">
                 <source src="midia/video.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
             <br>
-            <audio controls>
-                <source src="../atividade-inicial/img/descricao-produto.mp3" type="audio/mpeg">
+            <audio controls preload="metadata" title="Audio de descrição do produto">
+                <source src="midia/descricao-produto.mp3" type="audio/mpeg">
                 Seu navegador não suporta o elemento de áudio.
             </audio>
+            <br>
+            <iframe src="https://www.youtube.com/embed/tzVuDFzLALM?si=6jk6schW4rU9vZAF" width="400" height="225"
+                title="Video demonstrativo do produto Scania 113" allowfullscreen loading="lazy"></iframe>
+        </section>
+
+        <section id="local">
+            <h2>Onde Estamos</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.6955064520203!2d-51.15674012445172!3d-29.901873174995593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951970215ebb1293%3A0x3f5712aab952941f!2sSENAI!5e0!3m2!1spt-BR!2sbr!4v1786050924517!5m2!1spt-BR!2sbr"
+                width="400" height="400" title="Mapa da localização da loja" loading="lazy">
+            </iframe>
+
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <p>Desenvolvido por: Vitor e Cibely</p>
+    </footer>
 
 </body>
 

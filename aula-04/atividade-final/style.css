@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding-block: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+}
+
+form {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
