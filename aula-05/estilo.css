@@ -127,17 +127,6 @@ footer {
     padding: 5px 40px;
 }
 
-
-.cat-img {
-    position: relative;
-    width: 100%;
-}
-
-.cat-img img {
-    position: absolute;
-    
-}
-
 form {
     display: flex;
     flex-direction: column;
