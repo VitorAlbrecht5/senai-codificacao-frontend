@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+  <div id="inicio"></div>
   <!-- ============ CABEÇALHO ============ -->
   <!-- PASSO 3: menu horizontal · PASSO 6: header fixo -->
   <header id="topo">
@@ -20,7 +20,7 @@
 
     <nav>
       <ul class="menu">
-        <li><a href="#topo">Início</a></li>
+        <li><a href="#inicio">Início</a></li>
         <li><a href="#sabores">Sabores</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
@@ -121,8 +121,7 @@
 
         <div class="campo">
           <label for="pedido">Seu pedido</label>
-          <textarea id="pedido" name="pedido" rows="3"
-                    placeholder="Ex.: uma grande de calabresa..."></textarea>
+          <textarea id="pedido" name="pedido" rows="3" placeholder="Ex.: uma grande de calabresa..."></textarea>
         </div>
 
         <button type="submit" class="botao">Enviar pedido</button>
@@ -138,10 +137,11 @@
   </main>
 
   <!-- ============ RODAPÉ ============ -->
-  <!-- DESAFIO: crie um botão fixo "voltar ao topo" -->s
+  <!-- DESAFIO: crie um botão fixo "voltar ao topo" -->
+  <a class="botao-fixo" href="#inicio">▲ Topo</a>
   <footer>
     <p>Pizzaria Forno de Pedra — Canoas/RS</p>
-    <p><a href="#topo">Voltar ao topo</a></p>
+    <p><a href="#inicio">Voltar ao topo</a></p>
   </footer>
 
 </body>
